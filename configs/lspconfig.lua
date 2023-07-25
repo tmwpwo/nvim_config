@@ -45,3 +45,11 @@ lspconfig.zls.setup{
   capabilities = capabilities,
   filetypes = {"zig"},
 }
+
+lspconfig.clangd.setup{
+  on_attach = function(client, bufnr)
+    client.server_capabilities.signatureHelpProvideer = false
+    on_attach(client, bufnr)
+  end,
+  capabilities = capabilities,
+}
