@@ -10,6 +10,7 @@ local plugins = {
         "black",
         "rust-analyzer",
         "zls",
+        "clangd",
       },
     },
   },
