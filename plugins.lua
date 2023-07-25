@@ -11,6 +11,7 @@ local plugins = {
         "rust-analyzer",
         "zls",
         "clangd",
+        "clang-format",
       },
     },
   },
